@@ -13,7 +13,7 @@ Create ColumnSeries with binding of ItemsSource, XBindingPath, and YBindingPath 
 Set the SfCartesianChart IsTranposed and EnableSideBySideSeriesPlacement property value as false to create columns as horizontal bar and to avoid segments arrange in side by side.
 
 ### Step 3:
-We can show the model data in the bar segment using series ShowDataLabels property and by using the CartesianDataLabelSettings class ContentTemplate property to customize label as demonstrated in below code example.
+Display the model data values in the bar segment by setting the ColumnSeries ShowDataLabels property value as true and customize the data label by using the CartesianDataLabelSettings class ContentTemplate property as demonstrated in the below code example.
 
 **[XAML]**
 ```
@@ -49,7 +49,7 @@ We can show the model data in the bar segment using series ShowDataLabels proper
 ```
 
 ### Step 4:
-Declaration of an IValueConverter to customize the negative values into absolute values as per below code snippet.
+Using IValueConverter we can customize the negative values into absolute values as per below code snippet.
 
 **[C#]**
 ```
