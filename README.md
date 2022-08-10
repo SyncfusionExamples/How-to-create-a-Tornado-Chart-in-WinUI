@@ -68,6 +68,22 @@ public class ValueConverter : IValueConverter
 }
 ```
 
+### Step 5:
+Similarly, we can customize the axis label using the LabelTemplate property of the axis and by using a converter to display absolute values as per the below code example.
+
+**[XAML]**
+```
+<chart:SfCartesianChart.YAxes>
+    <chart:NumericalAxis>
+        <chart:NumericalAxis.LabelTemplate>
+            <DataTemplate>
+                <TextBlock Text="{Binding Content, Converter={StaticResource ValueConverter}}"/>
+            </DataTemplate>
+        </chart:NumericalAxis.LabelTemplate>
+    </chart:NumericalAxis>
+</chart:SfCartesianChart.YAxes>
+```
+
 ## Output:
 
 ![WinUI Tornado Chart](https://user-images.githubusercontent.com/53489303/183808346-d19e7b46-0499-408e-ad69-9e4c20292652.png)
