@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "WinUI_TornadoChart (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "WinUI_TornadoChart (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
