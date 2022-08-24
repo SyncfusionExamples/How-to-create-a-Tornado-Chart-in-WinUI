@@ -1,19 +1,19 @@
 # How to create a Tornado Chart in WinUI
 
-This article explains how to create a tornado chart using the Column chart in WinUI charts.
+This article explains how to create a tornado chart using the [Column chart](https://help.syncfusion.com/winui/cartesian-charts/column) in [WinUI charts](https://www.syncfusion.com/winui-controls/charts).
 
 The tornado chart is a special type of bar chart, where the bars extended from the defined baseline, which is also used to compare the data among different types of data or categories. The bars in the tornado chart are horizontal; this chart is basically used to show the impact, such as how a condition will impact the outcome. 
 
-You can achieve the tornado chart using column charts by following the steps below:
+You can achieve the tornado chart using [column charts](https://help.syncfusion.com/winui/cartesian-charts/column) by following the steps below:
 
 ### Step 1:
-Create ColumnSeries with binding of ItemsSource, XBindingPath, and YBindingPath properties.
+Create [ColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html) with binding of [ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ItemsSource), [XBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_XBindingPath), and [YBindingPath](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.XyDataSeries.html?tabs=tabid-1#Syncfusion_UI_Xaml_Charts_XyDataSeries_YBindingPath) properties.
 
 ### Step 2:
-Set the SfCartesianChart IsTranposed and EnableSideBySideSeriesPlacement property value as false to create columns as horizontal bar and to avoid segments arranged side by side.
+Set the [SfCartesianChart](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html) [IsTranposed](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_IsTransposed) and [EnableSideBySideSeriesPlacement](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.SfCartesianChart.html#Syncfusion_UI_Xaml_Charts_SfCartesianChart_EnableSideBySideSeriesPlacement) property value as false to create columns as horizontal bar and to avoid segments arranged side by side.
 
 ### Step 3:
-Display the model data values in the bar segment by setting the ColumnSeries ShowDataLabels property value as true and customize the data label by using the CartesianDataLabelSettings class ContentTemplate property as demonstrated in the code example below.
+Display the model data values in the bar segment by setting the [ColumnSeries](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ColumnSeries.html) [ShowDataLabels](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.DataMarkerSeries.html#Syncfusion_UI_Xaml_Charts_DataMarkerSeries_ShowDataLabels) property value as `true` and customize the data label by using the [CartesianDataLabelSettings](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.CartesianDataLabelSettings.html) class [ContentTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartDataLabelSettings.html#Syncfusion_UI_Xaml_Charts_ChartDataLabelSettings_ContentTemplate) property as demonstrated in the code example below.
 
 **[XAML]**
 ```
@@ -49,7 +49,7 @@ Display the model data values in the bar segment by setting the ColumnSeries Sho
 ```
 
 ### Step 4:
-Using IValueConverter, we can customize the negative values into absolute values as per the code example below.
+Using `IValueConverter`, we can customize the negative values into absolute values as per the code example below.
 
 **[C#]**
 ```
@@ -69,7 +69,7 @@ public class ValueConverter : IValueConverter
 ```
 
 ### Step 5:
-Similarly, we can customize the axis label using the LabelTemplate property of the axis and by using a converter to display absolute values as per the below code example.
+Similarly, we can customize the axis label using the [LabelTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelTemplate) property of the axis and by using a converter to display absolute values as per the below code example.
 
 **[XAML]**
 ```
