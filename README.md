@@ -88,7 +88,7 @@ Similarly, we can customize the axis label using the [LabelTemplate](https://hel
 
 ![WinUI Tornado Chart](https://user-images.githubusercontent.com/53489303/183808346-d19e7b46-0499-408e-ad69-9e4c20292652.png)
 
-KB article - [How to create a Tornado Chart in WinUI (SfCartesianChart)?](https://www.syncfusion.com/kb/13591/how-to-create-a-tornado-chart-in-winuisfcartesianchart)
+KB article - [How to create a Tornado Chart in WinUI (SfCartesianChart)?](https://www.syncfusion.com/kb/13606/how-to-create-a-winui-tornado-chart-sfcartesianchart)
 
 ## See also
 
