@@ -1,4 +1,4 @@
-# How to create a Tornado Chart in WinUI
+# How to create a WinUI Tornado Chart (SfCartesianChart)?
 
 This article explains how to create a tornado chart using the [Column chart](https://help.syncfusion.com/winui/cartesian-charts/column) in [WinUI charts](https://www.syncfusion.com/winui-controls/charts).
 
@@ -88,7 +88,7 @@ Similarly, we can customize the axis label using the [LabelTemplate](https://hel
 
 ![WinUI Tornado Chart](https://user-images.githubusercontent.com/53489303/183808346-d19e7b46-0499-408e-ad69-9e4c20292652.png)
 
-KB article - [How to create a Tornado Chart in WinUI (SfCartesianChart)?](https://www.syncfusion.com/kb/13606/how-to-create-a-winui-tornado-chart-sfcartesianchart)
+KB article - [How to create a WinUI Tornado Chart (SfCartesianChart)?](https://www.syncfusion.com/kb/13606/how-to-create-a-winui-tornado-chart-sfcartesianchart)
 
 ## See also
 
